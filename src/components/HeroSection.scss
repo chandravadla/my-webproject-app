@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
+
+/* Other styles for your app */
+body {
+  font-family: 'Montserrat', sans-serif;
+
+  h1,
+  p {
+    font-style: normal; /* Prevent italics */
+    margin: 0; /* Reset margin to eliminate default space */
+  }
+}
+
+.hero {
+//   background-image: url('../assets/images/bg-image-hero.jpg'); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  height: 500px; /* Set the desired height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff; /* Text color */
+  text-align: center;
+  position: relative;
+
+  .hero-dice-area {
+    position: absolute;
+    top: 40px; /* Adjust top distance from the top of the hero section */
+    right: 40px;
+  }
+
+  .hero-content {
+    max-width: 800px;
+    padding: 20px;
+
+    h1 {
+      font-size: 3rem; /* Increased font size for emphasis */
+      margin-bottom: 15px; /* Reduced bottom margin */
+    }
+
+    p {
+      font-size: 1.5rem; /* Increased font size for better readability */
+      margin-bottom: 20px; /* Reduced bottom margin */
+    }
+    .description {
+        font-size: 1rem;
+    }
+    .cta-button {
+        margin-top: 15px;
+        display: inline-block;
+        padding: 16px 60px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        font-size: 1.2rem;
+        background: linear-gradient(to right, #23959f, #6f26b5);
+        color: #000;
+        text-decoration: none;
+        border-radius: 10px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        cursor: pointer;
+        border: none;
+
+      &:hover {
+        background-color: #000; /* Change to your desired hover button color */
+        color: #fff; /* Change to your desired hover text color */
+      }
+    }
+  }
+}

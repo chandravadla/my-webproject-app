@@ -1,0 +1,17 @@
+// main.scss
+
+$primary-color: #3498db;
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  background-color: $primary-color;
+
+  h1 {
+    color: white;
+  }
+}
+
+/* ...other SASS styles */

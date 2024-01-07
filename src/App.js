@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import './App.scss'; // Your main SCSS file
+// import HeroSection from '/components/HeroSection.js'; // Import your HeroSection component
+import HeroSection from './components/HeroSection';
+import Cube from './components/Cube/Cube';
+import TabComponent from './components/TabComponent/TabComponent';
+import SkillsSection from './components/Skills/SkillsSection';
+// import Dice from './components/Dice/Dice';
+// import ContentImageSection from './ContentImageSection'; // Import your ContentImageSection component
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* Include the HeroSection */}
+      <HeroSection />
+      <TabComponent />
+      <SkillsSection />
+      {/* <Cube /> */}
+      {/* <Dice /> */}
+
+      {/* Include the ContentImageSection */}
+      {/* <ContentImageSection /> */}
     </div>
   );
 }
